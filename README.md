@@ -20,4 +20,12 @@
 - 실습간 필요한 데이터는 data폴더에 모두 저장되어 있으며 Rmd, 파일을 참고하여 실습할 때에는 개인이 데이터 경로를 일부 수정하여야 error없이 코드가 실행된다.
 
 ## 질의응답
-실습간 질문사항에 대해서는 해당과목 조교인 임성현 학생(tjdgusl99@snu.ac.kr)에게 메일을 통해서 문의한다.
+실습간 질문사항에 대해서는 해당과목 조교인 엄승현 학생(tmdgus545@snu.ac.kr)에게 메일을 통해서 문의한다.
+
+## 실습 관련 공지사항
+- (21.08.26)LAB10의 library(multtest) 라이브러리 설치시 "package ‘multtest’ is not available for this version of R"라는 에러가 발생하는 경우, 아래와 같이 입력하여 설치하시기 바랍니다.
+```
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install("multtest")
+```
